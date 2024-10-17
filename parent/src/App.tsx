@@ -9,7 +9,8 @@ function App() {
   useEffect(() => {
     const handleMessage = (event: MessageEvent) => {
       // Verify the message origin
-      if (event.origin !== 'http://localhost:5174') return;
+      // if (event.origin !== 'http://localhost:5174') return;
+      console.log(`parent event.origin: ${event.origin}`);
 
       // Handle the message
       console.log('Received message from iframe:', event.data);
@@ -26,8 +27,10 @@ function App() {
   }, []);
 
   const sendMessageToIframe = () => {
+    console.log('Sending message to iframe');
     const iframe = document.getElementById('iframe-id') as HTMLIFrameElement;
-    iframe.contentWindow?.postMessage({ type: 'GREETING', text: 'Hello from parent' }, 'http://localhost:5174');
+    console.log(iframe.contentWindow?.postMessage);
+    iframe.contentWindow?.postMessage({ type: 'GREETING', text: 'Hello from parent' }, '*');
   };
 
   return (

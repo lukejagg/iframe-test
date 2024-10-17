@@ -26,7 +26,7 @@ function App() {
   }, []);
 
   const sendMessageToParent = () => {
-    window.parent.postMessage({ type: 'RESPONSE', text: 'Hello from iframe' }, 'http://localhost:5173');
+    window.parent.postMessage({ type: 'RESPONSE', text: 'Hello from iframe' }, '*');
   };
 
   return (
