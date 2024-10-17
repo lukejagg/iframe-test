@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@speckai/paige':
+        specifier: link:/Users/luke/Projects/Hack/ai-frontend-engineer/packages/paige-npm
+        version: link:../../ai-frontend-engineer/packages/paige-npm
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -16,37 +19,37 @@ importers:
         version: 18.3.1(react@18.3.1)
     devDependencies:
       '@eslint/js':
-        specifier: ^9.11.1
+        specifier: ^9.12.0
         version: 9.12.0
       '@types/react':
-        specifier: ^18.3.10
+        specifier: ^18.3.11
         version: 18.3.11
       '@types/react-dom':
-        specifier: ^18.3.0
+        specifier: ^18.3.1
         version: 18.3.1
       '@vitejs/plugin-react-swc':
-        specifier: ^3.5.0
+        specifier: ^3.7.1
         version: 3.7.1(vite@5.4.9)
       eslint:
-        specifier: ^9.11.1
+        specifier: ^9.12.0
         version: 9.12.0
       eslint-plugin-react-hooks:
-        specifier: ^5.1.0-rc.0
+        specifier: 5.1.0-rc-fb9a90fa48-20240614
         version: 5.1.0-rc-fb9a90fa48-20240614(eslint@9.12.0)
       eslint-plugin-react-refresh:
         specifier: ^0.4.12
         version: 0.4.12(eslint@9.12.0)
       globals:
-        specifier: ^15.9.0
+        specifier: ^15.11.0
         version: 15.11.0
       typescript:
-        specifier: ^5.5.3
+        specifier: ^5.6.3
         version: 5.6.3
       typescript-eslint:
-        specifier: ^8.7.0
+        specifier: ^8.9.0
         version: 8.9.0(eslint@9.12.0)(typescript@5.6.3)
       vite:
-        specifier: ^5.4.8
+        specifier: ^5.4.9
         version: 5.4.9
 
 packages:
