@@ -9,7 +9,8 @@ function App() {
   useEffect(() => {
     const handleMessage = (event: MessageEvent) => {
       // Verify the message origin
-      if (event.origin !== 'http://localhost:5173') return;
+      console.log(`event.origin: ${event.origin}`);
+      // if (event.origin !== 'http://localhost:5173') return;
 
       // Handle the message
       console.log('Received message from parent:', event.data);
